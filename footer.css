@@ -1,0 +1,163 @@
+
+/* FOOTER--------------------------------------- */
+footer{
+    padding: 0;
+    margin: 0;
+    background-color: var(--wave);
+    color: white;
+}
+footer .apply_valloween{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 30px;
+    padding: 20px 15px;
+    background-image: url(./images/students_graduate3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+footer .apply_valloween::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(23, 64, 95, 0.589);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer .apply_valloween > div:nth-child(1){
+    width: 450px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+footer .apply_valloween > div:nth-child(1) i{
+    font-size: 60px;
+}
+footer .apply_valloween div button{
+    height: 45px;
+    width: 160px;
+    border-radius: 40px;
+    background-color: pink;
+    color: black;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    animation: animate 1.1s linear infinite;
+}
+@keyframes animate{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 192, 203, 0.5);
+    }
+    40%{
+        box-shadow: 0 0 0 15px rgba(255, 192, 203, 0);
+    }
+    80%{
+        box-shadow: 0 0 0 15px rgba(255, 192, 203, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 15px rgba(255, 192, 203, 0);
+    }
+}
+
+
+footer .top_layer{
+    display: flex;
+    align-items: center;
+    gap: 5px 10px;
+    flex-direction: column;
+    padding: 20px 30px 0;
+    text-align: center;
+}
+footer .top_layer figure img{
+    width: 110px;
+}
+footer .navigations{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin: 20px 0 10px;
+    padding: 10px 25px 0;
+    gap: 15px 10px;
+}
+
+footer .navigations > div{
+    width: 280px;
+}
+footer .navigations > div:nth-child(1) ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer .navigations > div:nth-child(1) ul li{
+    font-size: 15px;
+    padding: 2px 0;
+}
+footer .navigations > div:nth-child(1) ul li:hover{
+    text-decoration: underline;
+}
+footer .navigations > div:nth-child(1) ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer .navigations > div:nth-child(2) ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px 15px;
+    padding: 0;
+}
+footer .navigations > div:nth-child(2) ul li{
+    height: 35px;
+    width: 35px;
+    border-radius: 2px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--wave);
+}
+footer .prominent > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    gap: 20px 10px;
+}
+footer .prominent > div ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px 0;
+    display: flex;
+    align-items: center;
+}
+footer .prominent > div ul li{
+    font-size: 15px;
+    padding: 10px 10px;
+}
+footer .prominent > div ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.674);
+}
+footer .prominent > div form select{
+    width: 150px;
+    background-color: var(--wave);
+    color: white;
+}
+footer .copyright{
+    /* height: 40px; */
+    background-color: var(--wave);
+    color: black;
+    padding: 10px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.308);
+}
+footer .copyright p{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0;
+}

@@ -1,0 +1,236 @@
+
+/* for hero section------------------------------- */
+@media screen and (max-width: 1024px){
+    .hero{
+        height: calc(400px + 100px);
+    }
+    .hero .contents,
+    #launch img{
+        height: 500px;
+    }
+}
+@media screen and (max-width: 767px){
+    .hero{
+        height: 400px;
+    }
+    .hero .contents,
+    #launch img{
+        height: 400px;
+    }
+    #launch div h1{
+        font-size: 2.7rem;
+        left: 20px;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 586px){
+    #launch div h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 351px){
+    #launch div h1{
+        font-size: 1.5rem;
+    }
+}
+
+/* for backtoschool section------------------------------- */
+@media screen and (max-width: 648px){
+    .back_to_school > section:first-child{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* for study here section------------------------------- */
+@media screen and (max-width: 360px){
+    .study_caption h5{
+        font-size: 15px;
+        width: 250px;
+    }
+    .study_here .offer-item{
+        flex: 1 0 100%;
+    }
+}
+/* for highlight section------------------------------- */
+@media screen and (max-width: 767px){
+    .highlights{
+        flex-direction: column;
+    }
+    .highlights > div{
+        flex: 1 0 100%;
+    }
+}
+/* for apply now section------------------------------- */
+@media screen and (max-width: 767px){
+    .glass{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 480px){
+    .glass{
+        width: 100%;
+    }
+}
+/* for standard container section------------------------------- */
+@media screen and (max-width: 920px){
+    .standard_item{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width: 700px){
+    .standard{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+/* for info section------------------------------- */
+@media screen and (max-width: 767px){
+    .infos .info-item figure{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 412px){
+    .details div span{
+        font-size: 19px;
+    }
+    .details{
+        padding: 15px;
+    }
+}
+/* for map section------------------------------- */
+@media screen and (max-width: 767px){
+    .map iframe{
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

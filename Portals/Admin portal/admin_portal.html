@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valloween News</title>
+<!-- Bootstrap link -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Boxicon -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="admin_portal.css">
+<link rel="stylesheet" href="admin_portal-query.css">
+</head>
+<body>
+    <section class="navigations">
+        <section class="nav_holder">
+            <div class="identity">
+                    <span class="exit" onclick="exitNav()">&#215;</span>
+                    <span class="dots"><img src="./images/dots.png"></span>
+                    <div>
+                        <figure>
+                            <span class="fa fa-user"></span>
+                        </figure>
+                        <p>Valloween Admin</p>
+                    </div>
+                </div>
+            <nav>
+                <div class="nav_content">
+                    <ul>
+                        <li>
+                            <div class="nav_content_title">
+                                <span>WorkSheets</span> <span class="fa fa-angle-up"></span>
+                            </div>
+                        <div class="nav_content_child">
+                            <ul>
+                                <li><span>Worksheet 01</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Worksheet 02</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Worksheet 03</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Worksheet 04</span><span class="fa fa-angle-right"></span></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Applications</span> <span class="fa fa-angle-up"></span>
+                            </div>
+                        <div class="nav_content_child">
+                            <ul>
+                                <li><span>School Registeration</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>External Exam</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Competition</span><span class="fa fa-angle-right"></span></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Uploaded Results</span> <span class="fa fa-angle-up"></span>
+                            </div>
+                        <div class="nav_content_child">
+                            <ul>
+                                <li><span>Junior Secondary (Jss 1)</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Junior Secondary (Jss 2)</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Junior Secondary (Jss 3)</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Senior Secondary (Sss 1)</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Senior Secondary (Sss 2)</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Senior Secondary (Sss 3)</span><span class="fa fa-angle-right"></span></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Portals</span> <span class="fa fa-angle-up"></span>
+                            </div>
+                        <div class="nav_content_child">
+                            <ul>
+                                <li><span>Staffs Portal</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Students Portal</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Parents Portal</span><span class="fa fa-angle-right"></span></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Calendar</span> <span class="fa fa-angle-up"></span>
+                            </div>
+                        <div class="nav_content_child">
+                            <ul>
+                                <li><span>Resumption Date</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Closure Date</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>PTA Meeting</span><span class="fa fa-angle-right"></span></li>
+                                <li><span>Other Activities</span><span class="fa fa-angle-right"></span></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Calculator</span> <!--<span class="fa fa-angle-up"></span>-->
+                            </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Resources</span> <!--<span class="fa fa-angle-up"></span>-->
+                            </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Schedule</span> <!--<span class="fa fa-angle-up"></span>-->
+                            </div>
+                        </li>
+                        <!-- ---------- -->
+                        <li>
+                            <div class="nav_content_title">
+                                <span>Messages</span> <!--<span class="fa fa-angle-up"></span>-->
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </section>
+
+    <section class="contents">
+        <section class="contents_holder">
+            <!-- TOP HOLDER ----- -->
+            <div class="top_holder">
+                <div class="holder1">
+                    <div class="data_namecontainer">
+                        <span id="nav_opener" onclick="openNav()"><img src="./images/bars02.png" width="30px"></span>
+                        <div class="data_name">
+                            <figure><img src="./emblem2.png"></figure>
+                            <figcaption>Valloween Database</figcaption>
+                        </div>
+                    </div>
+
+                    <div class="data_icons">
+                        <div class="icons_list">
+                           <span title="Notification"> <img src="./images/bell.png"></span>
+                           <span title="Settings"> <img src="./images/settings.png"></span>
+                           <span title="History"> <img src="./images/history.png"></span>
+                           <!-- <span> <img src="./images/darkmode.png"></span>
+                            <span class="fa fa-bank"></span>
+                            <span class="fa fa-cog"></span>
+                            <span class="fa fa-fire"></span>
+                            <span class="fa fa-shopping-cart"></span> -->
+                        </div>
+                        <div class="admin_settings middle">
+                            <span>Admin</span>
+                            <span><img src="./images/admin_settings.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SEARCH BAR ----- -->
+            <div class="searchbar">
+                <input type="text" placeholder="Search Admin">
+                <span class="fa fa-search"></span>
+            </div>
+             <!-- INTRO GREETING ----- -->
+            <section class="intro_greeting">
+                <div>
+                    <span class="cyber_float"><img src="./images/cyber-security.png"></span>
+                    <h3>
+                        Welcome to your Portal, Admin!
+                    </h3>
+                   <div>
+                    <p style="color: yellow">
+                        <span>Current Notifications</span>
+                    </p>
+                    <p style="color: pink">
+                        <span>Messages from Staffs</span>
+                    </p>
+                    <p>
+                        <span>Last modified:</span>
+                        <span>24/03/2024</span>
+                    </p>
+                   </div>
+                </div>
+            </section>
+            <!-- WEB MODE ----- -->
+            <div class="web_mode">
+                <div class="setmode">
+                    <div class="inner_left">
+                        Dark mode
+                    </div>
+                    <div class="inner_right">
+                        <span><img src="./images/darkmode.png"></span>
+                    </div>
+                </div>
+            </div>
+             <!-- ACTIVE COURSES ----- -->
+             <div class="active_courses">
+                 <div class="section_caption">
+                     <p>Active Courses</p>
+                 </div>
+                 <section>
+                    <div class="active_courses_items">
+                        <figure>
+                            <img src="./images/volume.png">
+                        </figure>
+                        <figcaption>
+                            <span>Physics</span>
+                            <span>Mr. Francis</span>
+                        </figcaption>
+                    </div>
+                    <div class="active_courses_items">
+                        <figure>
+                            <img src="./images/scientific-calculator.png">
+                        </figure>
+                        <figcaption>
+                            <span>Mathematics</span>
+                            <span>Mrs. Godwin</span>
+                        </figcaption>
+                    </div>
+                    <div class="active_courses_items">
+                        <figure>
+                            <img src="./images/speedometer.png">
+                        </figure>
+                        <figcaption>
+                            <span>Geography</span>
+                            <span>Mr. Patrick</span>
+                        </figcaption>
+                    </div>
+                    <div class="active_courses_items">
+                        <figure>
+                            <img src="./images/renewable-energy.png">
+                        </figure>
+                        <figcaption>
+                            <span>Accounting</span>
+                            <span>Mr. Livinus</span>
+                        </figcaption>
+                    </div>
+                    <div class="active_courses_items">
+                        <figure>
+                            <img src="./images/temperature.png">
+                        </figure>
+                        <figcaption>
+                            <span>Biology</span>
+                            <span>Mr. John</span>
+                        </figcaption>
+                    </div>
+                    <div class="active_courses_items">
+                        <figure>
+                            <img src="./images/history.png">
+                        </figure>
+                        <figcaption>
+                            <span>History</span>
+                            <span>Mr. Williams</span>
+                        </figcaption>
+                    </div>
+                    <div class="active_courses_items" style="visibility: hidden;">
+                        <figure>
+                            <img src="./images/temperature.png">
+                        </figure>
+                        <figcaption>
+                            <span>Biology</span>
+                            <span>Mrs. Godwin</span>
+                        </figcaption>
+                    </div>
+                 </section>   
+             </div>
+             <!-- STUDENT'S EVALUATION AND SCHEDULE ----- -->
+             <div class="sse">
+                 <div class="student_evaluation">
+                     <div class="student_evaluation_caption">
+                         <span>Student's Evaluation</span>
+                     </div>
+                     <section>
+                        <div class="grouping">
+                            <span>Subjects</span>
+                            <span>Grading</span>
+                        </div>
+                        <div class="grouping_items">
+                            <ul>
+                                <li>
+                                    <span>Maths</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 90%;"></span>
+                                        </span>
+                                        <i>90%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Engllish</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 50%;"></span>
+                                        </span>
+                                        <i>50%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Physics</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 65%;"></span>
+                                        </span>
+                                        <i>65%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Computer</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 100%;"></span>
+                                        </span>
+                                        <i>100%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Civic</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 45%;"></span>
+                                        </span>
+                                        <i>45%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Biology</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 55%;"></span>
+                                        </span>
+                                        <i>55%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Chemistry</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 87%;"></span>
+                                        </span>
+                                        <i>87%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Accounting</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 92%;"></span>
+                                        </span>
+                                        <i>92%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Commerce</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 71%;"></span>
+                                        </span>
+                                        <i>71%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Literature</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 44%;"></span>
+                                        </span>
+                                        <i>44%</i>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>Agric</span>
+                                    <div>
+                                        <span class="outer">
+                                            <span class="inner" style="width: 54%;"></span>
+                                        </span>
+                                        <i>54%</i>
+                                    </div>
+                                </li>                          
+                            </ul>
+                        </div>
+                     </section>
+                 </div>
+                 <div class="schedule">
+                    <div class="schedule_caption">
+                         <span>Schedule</span>
+                     </div>
+                     <section>
+                         <div class="schedule_items">
+                             <span>JAN</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>14TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>JAN</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>19TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>FEB</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>29TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>MAR</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>5TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>MAY</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>1ST</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>MAY</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>27TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>MAY</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>29TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>JUNE</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>18TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>JUNE</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>30TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>JULY</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>19TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>AUG</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>2ND</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>AUG</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>3RD</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>AUG</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>4TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>AUG</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>17TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>SEP</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>4TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>SEP</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>16TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>SEP</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>28TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>OCT</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>11TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>NOV</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>16TH</span>
+                         </div>
+                         <div class="schedule_items">
+                             <span>NOV</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>19TH</span>
+                         </div> 
+                         <div class="schedule_items" style="visibility: hidden;">
+                             <span>NOV</span>
+                             <div class="outer">
+                                 <span class="inner"></span>
+                             </div>
+                             <span>888TH</span>
+                         </div>                   
+                     </section>
+                 </div>
+             </div>
+            <!-- STAFF, STUDENTS, PARENTS AND ADMIN DATA RECORDS ----- -->
+            <section class="database">
+                <div class="students-database">
+                    <span><img src="./images/two_student.png"></span>
+                    <div>
+                        <h3>Students' Database</h3>
+                        <button>View &raquo;</button>
+                    </div>
+                </div>
+                    <section class="other-database">
+                        <div class="students-database">
+                            <p>Staffs' Database</p>
+                            <button>View &raquo;</button>
+                        </div>
+                        <div class="students-database">
+                            <p>Parents' Database</p>
+                            <button>View &raquo;</button>
+                        </div>
+                        <div class="students-database">
+                            <p>Admin Info</p>
+                            <button>View &raquo;</button>
+                        </div>
+                    </section>  
+            </section>
+            <!-- SCHOOL FUNCTIONARIES (PREFECTS) ----- -->
+            <section class="prefects">
+                <div class="long_design">
+                    <div class="long_content">
+                        Prefects
+                    </div>
+                    <div class="long_item"></div>
+                </div>
+                <div class="prefects_list">
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Senior Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/students_graduate5.jpeg" style="object-position: left center;">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Deputy Senior Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/standard_representer2.png">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Labour Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/student_pointing.webp">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Labour Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/phase02.webp">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Chapel Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/student_vison.webp" style="object-position: right center;">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Chapel Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Discipline Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Discipline Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Library Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Library Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/student_club.jpg" style="object-position: left center;">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Laboratory Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/student_club.jpg" style="object-position: left center;">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Laboratory Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Social Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Social Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Game Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Game Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Sanitary Prefect</figcaption>
+                    </div>
+                    <div class="prefects_item">
+                        <figure>
+                            <img src="./images/normal_student.jpeg">
+                        </figure>
+                        <div><span class="fa fa-angle-down"></span></div>
+                        <figcaption>Assistant Sanitary Prefect</figcaption>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="./admin_portal.js"></script>
+</body>
+</html>

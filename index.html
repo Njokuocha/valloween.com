@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valloween Academy</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(23, 64, 95);
+            color: white;
+        }
+        div{
+            display: flex;
+            gap: 5px 12px;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        .up{
+            animation: ups 2s linear 1;
+            /* animation-delay: 1s; */
+        }
+        @keyframes ups{
+            0%{
+                opacity: 0;
+                transform: translateY(-15px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .down{
+            animation: downs 2s linear 1;
+            /* animation-delay: 1s; */
+        }
+        @keyframes downs{
+            0%{
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media screen and (max-width: 412px){
+            div{
+            font-size: 16px;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span class="down">v</span>
+        <span class="up">a</span>
+        <span class="down">l</span>
+        <span class="up">l</span>
+        <span class="down">l</span>
+        <span class="up">o</span>
+        <span class="down">w</span>
+        <span class="up">e</span>
+        <span class="down">e</span>
+        <span class="up">n</span>
+    </div>
+    
+    <script>
+        window.addEventListener("load", ()=>{
+            setTimeout(migratePage, 3500);
+        });
+        function migratePage(){
+            window.document.location.href = "index_home.html";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

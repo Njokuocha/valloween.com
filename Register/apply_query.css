@@ -1,0 +1,142 @@
+/* CONTENT */
+/* @media screen and (max-width: 480px){
+    .content{
+        height: 400px;
+    }
+} */
+/* MISSION */
+@media screen and (max-width: 678px){
+    .mission{
+        /* flex-wrap: wrap; */
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .mission figure{
+        width: 100%;
+    }
+    .mission figcaption{
+        width: 100%;
+        /* border: 2px solid green; */
+    }
+}
+@media screen and (max-width: 412px){
+    .mission figure{
+        height: 250px;
+    }
+}
+/* PREFERENCE */
+@media screen and (max-width: 543px){
+    .preference-content{
+        flex-direction: column;
+    }
+    .preference-content div{
+        width: 100%;
+    }
+}
+/* COMMENT */
+@media screen and (max-width: 500px){
+    .comment_container{
+        flex-direction: column;
+    }
+    .comment{
+        width: 100%;
+    }
+    .others > section{
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

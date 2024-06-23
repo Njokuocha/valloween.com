@@ -1,0 +1,52 @@
+
+/* for footer section------------------------------- */
+@media screen and (max-width: 767px){
+    .apply_valloween{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .apply_valloween > div:nth-child(1){
+        align-items: center;
+        text-align: center;
+    }
+        
+}
+@media screen and (max-width: 650px){
+    footer .prominent > div{
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+}
+@media screen and (max-width: 500px){
+    footer .apply_valloween > div:nth-child(1){
+        width: 100%;
+    }
+}
+@media screen and (max-width: 412px){
+    footer .navigations > div:nth-child(1) ul li{
+        font-size: 13px;
+    }
+    footer .navigations > div:nth-child(2) ul li{
+        height: 30px;
+        width: 30px;
+    }
+    footer .prominent > div ul{
+        font-size: 14px;
+        /* flex-direction: column; */
+    }
+    footer .prominent > div ul li{
+        padding: 0 5px;
+    }
+}
+@media screen and (max-width: 340px){
+    footer .prominent > div ul span{
+        display: none;
+    }
+    footer .prominent > div ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .navigations{
+        flex-wrap: wrap;
+    }
+}

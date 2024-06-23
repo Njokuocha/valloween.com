@@ -1,0 +1,194 @@
+@media screen and (max-width: 1168px){
+    .other-database > div{
+        height: 200px;
+        width: 200px;
+        gap: 5px;
+    }
+    .other-database > div p{
+        font-weight: 17px;
+    }
+    .students-database > span img{
+        width: 250px;
+    }
+}
+/* side bar navigation for admin && 767px mobile screen interface*/
+@media screen and (max-width: 980px){
+    .navigations{
+        width: 250px;
+    }
+    .contents{
+        width: calc(100% - 250px);
+    }
+    .students-database > div h3{
+        /* font-size: 2rem; */
+    }
+}
+@media screen and (max-width: 767px){
+    body{
+        padding: 0;
+    }
+    .prefects{
+        margin: 30px 0;
+    }
+    .navigations{
+        width: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        display: none;
+    }
+    .contents{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    #nav_opener{
+        display: inline;
+    }
+    .active_courses{
+        padding: 10px 5px;
+    }
+    .navigations, .sse{
+        padding: 0;
+    }
+    .nav_holder{
+        border-radius: 0;
+    }
+    .identity > .exit{
+        display: inline;
+    }
+}
+/* --------------------ends here----------------- */
+@media screen and (max-width: 980px){
+    .other-database{
+        flex-direction: column;
+    }
+    .other-database > div{
+        flex-grow: 1;
+        width: 100%;
+        border-radius: 5px;
+        height: 180px;
+        margin: 0 5px;
+    }
+    .sse{
+        flex-direction: column;
+        gap: 20px 10px;
+    }
+    .sse > div{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 540px){
+    .holder1 .data_icons .icons_list{
+        display: none;
+    }
+    .intro_greeting > div h3{
+        font-size: 2rem;
+    }
+    .students-database > span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+    }
+    .students-database{
+        /* justify-content: flex-start; */
+        flex-direction: row;
+        padding-right: 10px;
+    }
+    .students-database > span img{
+        /* width: 300px; */
+        opacity: 0.2;
+        height: 110%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 412px){
+    .holder1 .data_name figure img{
+        width: 30px;
+    }
+    .holder1 .data_name{
+        gap: 5px 5px;
+    }
+    .holder1 .data_name figcaption{
+        font-size: 13px;
+    }
+    .holder1 .data_namecontainer{
+        gap: 5px 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*website active color rgb(23, 64, 95) */
+.html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+:root{
+    --wave: rgb(23, 64, 95);
+    --blue:   #0099ff;
+}
+body{
+    height: 100vh;
+    display: flex;
+}
+.login, .login_placeholder{
+    height: 100%;
+    overflow: auto;
+    /* border: 2px solid black; */
+}
+section.login{
+    width: 400px;
+    background: var(--wave);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.valloween{
+    display: flex;
+    align-items: center;
+    gap: 5px 8px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 17px;
+}
+.valloween img{
+    width: 50px;
+}
+.login > section{
+    width: 80%;
+    /* border: 2px solid white; */
+}
+.login .login_caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.login .login_caption span{
+    font-size: 8rem;
+}
+.login.login_caption p{
+    font-size: 22px;
+}
+/* form */
+.login > section form input,
+.login > section form button{
+    width: 100%;
+    
+}
+.login > section form input{
+    border-radius: 2px;
+    font-size: 15px;
+    background: transparent;
+    border-width: 2.5px;
+    margin: 14px 0;
+    color: white;
+}
+.login > section form input:focus{
+    color: black;
+}
+.login > section form input::placeholder{
+    color: white;
+}
+.login > section form button{
+    border-radius: 2px;
+}
+
+
+
+
+
+section.login_placeholder{
+    width: calc(100% - 400px);
+    background-image: url(./books2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: white;
+}
+section.login_placeholder::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 64, 95, 0.849);
+    z-index: -1;
+}
+.login_placeholder div i{
+    font-size: 12rem;
+    color: inherit;
+}
+.login_placeholder p{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+/* media query------------------------------------ */
+@media screen and (max-width: 767px){
+    section.login_placeholder{
+        display: none;
+    }
+    .login > section{
+        width: 400px;
+        /* border: 2px solid white; */
+    }
+    section.login{
+        width: 100%;
+        padding: 0 20px;
+        background-image: url(./books2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+    section.login::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(23, 64, 95, 0.849);
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

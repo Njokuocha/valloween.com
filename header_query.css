@@ -1,0 +1,76 @@
+/* for top header------------------------------- */
+@media screen and (max-width: 1120px){
+    .header .webcaption{
+        width: 200px;
+    }
+    .header .webcaption img{
+        width: 70px;
+    }
+    .header .holder nav{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .header .holder nav > ul > li > span:nth-child(2){
+        display: none;
+    }
+    .header .holder nav > ul > li > i{
+        font-size: 22px;
+    }
+    .header .holder nav > ul{
+        justify-content: flex-end;
+        padding-right: 15px;
+        gap: 5px 15px;
+    }
+    .header .holder nav > ul > li{
+        gap: 0 10px;
+    }
+    .header .holder nav > ul > li .menudown ul li{
+        font-size: 13px;
+    }
+    .header .holder nav > ul > li .menudown{
+        left: -90px;
+        width: 140px;
+    }
+}
+@media screen and (max-width: 767px){
+    .header .holder nav > div{
+        display: flex;
+    }
+    .header .holder nav > ul{
+        display: none;
+    }
+    .header .webcaption{
+        display: none;
+    }
+    .header .holder nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px;
+        align-items: center;
+        transform: skew(0deg);
+    }
+    .header .holder nav > ul{
+        transform: skew(0deg);
+    }
+}
+@media screen and (max-width: 480px){
+    .header .contact_info{
+        padding-right: 10px;
+        gap: 0 10px;
+    }
+    .header .contact_info div{
+        font-size: 14px;
+    }
+    .header .contact_info div i{
+        font-size: 19px;
+        gap: 0;
+    }
+}
+@media screen and (max-width: 412px){
+    .header .contact_info{
+        flex-direction: column;
+    }
+}
+
+
